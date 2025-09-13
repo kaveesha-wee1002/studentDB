@@ -11,7 +11,17 @@ The **Student Management System** is a console-based Java application that inter
 - **Update Student**: Modify existing student records using their ID.
 - **Delete Student**: Remove student records from the database.
 - **Console Menu**: Simple text-based interface for user interaction.
+- 
 - **JDBC Best Practices**: Uses `PreparedStatement` to prevent SQL injection, handles exceptions, and closes resources properly.
+
+  ## Project Structure
+src/
+└── studentdb/
+├── DBConnection.java   # Handles database connection
+├── Student.java        # Model class for student entity
+├── StudentDAO.java     # Contains CRUD operations
+└── Main.java           # User interface and menu-driven program
+
 
 ---
 
@@ -21,17 +31,29 @@ The **Student Management System** is a console-based Java application that inter
 - **IDE**: IntelliJ IDEA (recommended)
 - **JDBC Driver**: MySQL Connector/J
 
----
+How to Use
+	1.	Add Student
+	•	Enter Name, Age, and Email when prompted.
+	2.	View Students
+	•	Displays all students in the database with their ID, Name, Age, and Email.
+	3.	Update Student
+	•	Provide the student ID, then enter updated Name, Age, and Email.
+	4.	Delete Student
+	•	Provide the student ID to delete the corresponding record.
+	5.	Exit
+	•	Close the application safely.
 
-## Project Structure
-src/
-└── studentdb/
-├── DBConnection.java   # Handles database connection
-├── Student.java        # Model class for student entity
-├── StudentDAO.java     # Contains CRUD operations
-└── Main.java           # User interface and menu-driven program
+⸻
 
----
+Assumptions
+	•	Emails are unique for each student.
+	•	Users will provide valid input types (integer for age, string for name/email).
+	•	MySQL server is running on localhost with default port 3306.
+	•	No concurrent modifications are expected (single-user console application).
+
+⸻
+
+
 
 ---
 
