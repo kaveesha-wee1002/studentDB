@@ -56,24 +56,3 @@ CREATE TABLE IF NOT EXISTS students (
 );
 
 
-How to Use
-	1.	Add Student
-	•	Enter Name, Age, and Email when prompted.
-	2.	View Students
-	•	Displays all students in the database with their ID, Name, Age, and Email.
-	3.	Update Student
-	•	Provide the student ID, then enter updated Name, Age, and Email.
-	4.	Delete Student
-	•	Provide the student ID to delete the corresponding record.
-	5.	Exit
-	•	Close the application safely.
-
-⸻
-
-Assumptions
-	•	Emails are unique for each student.
-	•	Users will provide valid input types (integer for age, string for name/email).
-	•	MySQL server is running on localhost with default port 3306.
-	•	No concurrent modifications are expected (single-user console application).
-
-⸻
